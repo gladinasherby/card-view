@@ -15,14 +15,17 @@ html{
     /* border:2px dashed black; */
     padding:20px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    width:40%;
-    height: 60%;
+  
+  width:40%;
+  margin:20px;
+  max-width: 30vw;
+  max-height: 80vh;
+  
 }
-* {
-    box-sizing: border-box;
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
   
 .text{
     
@@ -32,9 +35,12 @@ html{
     text-align: left;
 }
 img{
-    max-width: fit-content;
-    width:99%;
+    object-fit: cover;
+    width:100%;
+    /* max-width: 100%; */
+    height: auto;
     display: block;
+   
 border-radius: 20px;
 
 }
@@ -45,8 +51,7 @@ border-radius: 20px;
 
 .card:hover{
     box-shadow: 0px 0px 2px black;
-        transform: scale(1.01);
-        transform: translate3D(1.1);
+    transform: scale(1.01) translateX(1.1px); 
         backdrop-filter: sepia(90%);
         -webkit-box-shadow:0px 0px 60px 14px rgba(255,166,246,0.9);
         -moz-box-shadow: 0px 0px 60px 14px rgba(255,166,246,0.9);
@@ -57,3 +62,4 @@ border-radius: 20px;
         display: block;
     }
 }
+
